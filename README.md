@@ -12,4 +12,4 @@ PS: os prints ficam na raíz do projeto na pasta evidencias/ após a execução 
 
 Exercício 5 - As querys estão contidas no arquivo na raíz do projeto cea.sql
 
-Exercício 6 - Para execução de todos os teste executar Text.java com o id @ExecutaCenarios
+Exercício 6 - Para execução de todos os teste executar Test.java com o id @ExecutaCenarios

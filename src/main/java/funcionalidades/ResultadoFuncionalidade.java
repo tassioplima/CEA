@@ -1,6 +1,13 @@
 package funcionalidades;
 
 import java.awt.Image;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import javax.imageio.ImageIO;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -86,14 +93,22 @@ public class ResultadoFuncionalidade{
 		
 	}
 	
-	public void downloadImg() throws InterruptedException{
+	public void downloadImg() throws IOException, MalformedURLException{
 		
-		action.contextClick(resultado.getImg()).build().perform();
-		action.keyDown(Keys.SHIFT).sendKeys("s").keyUp(Keys.SHIFT).perform();
-		action.sendKeys(Keys.CONTROL, "v").build().perform();
-		action.sendKeys(Keys.CONTROL, "s").build().perform();
-		Thread.sleep(1000);
-		navegador.tearDown();
+		//action.contextClick(resultado.getImg()).build().perform();
+		try {
+			String cartaoImg = resultado.getImg().getAttribute("src");
+			URL imageURL = new URL(cartaoImg);
+			BufferedImage saveImage = ImageIO.read(imageURL);
+			
+			ImageIO.write(saveImage, "png", new File("cartao.png"));
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally{
+		}
+		
+		//action.sendKeys(Keys.SHIFT, "s").build().perform();
 		
 	}
 	
