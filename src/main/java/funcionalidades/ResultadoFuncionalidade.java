@@ -89,9 +89,12 @@ public class ResultadoFuncionalidade{
 	public void downloadImg() throws InterruptedException{
 		
 		action.contextClick(resultado.getImg()).build().perform();
-		Thread.sleep(100);
-		action.sendKeys(Keys.SHIFT, "S").build().perform();
-	
+		action.keyDown(Keys.SHIFT).sendKeys("s").keyUp(Keys.SHIFT).perform();
+		action.sendKeys(Keys.CONTROL, "v").build().perform();
+		action.sendKeys(Keys.CONTROL, "s").build().perform();
+		Thread.sleep(1000);
+		navegador.tearDown();
+		
 	}
 	
 	

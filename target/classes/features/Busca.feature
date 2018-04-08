@@ -8,7 +8,7 @@ Funcionalidade: Buscar elementos de perguntas frequentes, perguntas exibidas e v
 	
 		Dado que estou na pagina inicial		
 		
-	@ID01 @PesquisaCenario
+	@ID01 @ExecutaCenarios
 	
 	Cenario: Realizar ação de pesquisa de perguntas frequentes
 	
@@ -17,7 +17,7 @@ Funcionalidade: Buscar elementos de perguntas frequentes, perguntas exibidas e v
 		Entao apresenta resultado das perguntas frequentes e realiza print	
 		
 		
-	@ID02 @PesquisaCenario	
+	@ID02 @ExecutaCenarios	
 	
 	Cenario: Realizar pesquisa "Institucional" na seção "Loja Física"
 
@@ -26,7 +26,7 @@ Funcionalidade: Buscar elementos de perguntas frequentes, perguntas exibidas e v
 	 
 	 Entao validar as perguntas exibidas na tela
 	 
-	 @ID03 @PesquisaCenario
+	 @ID03 @ExecutaCenarios
 	 
 	Cenario: Realizar pesquisa do Telefone do Cartão C&A	
 	 
