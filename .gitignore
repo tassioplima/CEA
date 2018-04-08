@@ -21,6 +21,7 @@ local.properties
 *.jpeg
 *.bmp
 
+
 # External tool builders
 .externalToolBuilders/
 
