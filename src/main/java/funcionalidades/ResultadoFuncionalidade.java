@@ -48,7 +48,7 @@ public class ResultadoFuncionalidade{
 		String perguntas = resultado.getTextPerguntas();
 		System.out.println(perguntas);
 		print.tirarPrint(driver, "Ex1 - PerguntasFrequentes");
-		navegador.tearDown();
+		//driver.close();
 	}
 	
 	/**
@@ -72,7 +72,7 @@ public class ResultadoFuncionalidade{
 		resultado.getComprarCartao();
 		resultado.getEnviarCurriculo();
 		print.tirarPrint(driver, "Ex2 - Institucional");
-		navegador.tearDown();
+		//driver.close();
 		
 	}
 	
@@ -87,16 +87,16 @@ public class ResultadoFuncionalidade{
 		
 	}
 	
-	public void downloadImg() throws IOException, MalformedURLException{
+	/** Baixa arquivo de imagem dos cartões
+	 * @throws IOException
+	 * @throws MalformedURLException
+	 */
+	public void downloadImg(){
 		
 		action.contextClick(resultado.getImg()).build().perform();
 		action.sendKeys(Keys.SHIFT, "s").build().perform();
 		print.tirarPrint(driver, "Ex3 - ImagemCartão");
-		navegador.tearDown();
-		
-	}
-	
-	
-	
+		//driver.close();
+	}	
 
 }

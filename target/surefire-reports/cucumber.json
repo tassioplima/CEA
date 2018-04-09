@@ -25,7 +25,137 @@
         "steps": [
           {
             "result": {
-              "duration": 11321295868,
+              "duration": 5077008379,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que estou na pagina inicial",
+            "match": {
+              "location": "PaginaInicialStep.que_estou_na_pagina_inicial()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Realizar aÃ§Ã£o de pesquisa de perguntas frequentes",
+        "description": "",
+        "id": "buscar-elementos-de-perguntas-frequentes,-perguntas-exibidas-e-valores-da-tela;realizar-aã§ã£o-de-pesquisa-de-perguntas-frequentes",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12766650352,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "acessar categoria de ajuda",
+            "match": {
+              "location": "ResultadoStep.acessar_categoria_de_ajuda()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 514303789,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "apresenta resultado das perguntas frequentes e realiza print",
+            "match": {
+              "location": "ResultadoStep.apresentaResultadoDasPerguntasFrequentesERealizaPrint()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@ID01"
+          },
+          {
+            "line": 11,
+            "name": "@ExecutaCenarios"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "Realizacao do acesso inicial como pre-requisito",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 1175462903,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que estou na pagina inicial",
+            "match": {
+              "location": "PaginaInicialStep.que_estou_na_pagina_inicial()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "Realizar pesquisa \"Institucional\" na seÃ§Ã£o \"Loja FÃ­sica\"",
+        "description": "",
+        "id": "buscar-elementos-de-perguntas-frequentes,-perguntas-exibidas-e-valores-da-tela;realizar-pesquisa-\"institucional\"-na-seã§ã£o-\"loja-fã­sica\"",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4896404555,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "acessar a opcao institucional na secao de loja fisica",
+            "match": {
+              "location": "ResultadoStep.acessar_a_categoria_institucional_na_secao_de_loja_fisica()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 570323459,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "validar as perguntas exibidas na tela",
+            "match": {
+              "location": "ResultadoStep.validar_as_perguntas_exibidas_na_tela()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 20,
+            "name": "@ID02"
+          },
+          {
+            "line": 20,
+            "name": "@ExecutaCenarios"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "Realizacao do acesso inicial como pre-requisito",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 1045126956,
               "status": "passed"
             },
             "line": 9,
@@ -47,7 +177,7 @@
         "steps": [
           {
             "result": {
-              "duration": 26556101926,
+              "duration": 11692995819,
               "status": "passed"
             },
             "line": 33,
@@ -65,7 +195,7 @@
           },
           {
             "result": {
-              "duration": 2787713728,
+              "duration": 400989374,
               "status": "passed"
             },
             "line": 35,
@@ -77,7 +207,7 @@
           },
           {
             "result": {
-              "duration": 16000,
+              "duration": 16410,
               "status": "passed"
             },
             "line": 37,
