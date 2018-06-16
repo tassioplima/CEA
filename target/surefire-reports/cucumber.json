@@ -25,7 +25,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5077008379,
+              "duration": 7569517362,
               "status": "passed"
             },
             "line": 9,
@@ -47,8 +47,9 @@
         "steps": [
           {
             "result": {
-              "duration": 12766650352,
-              "status": "passed"
+              "duration": 52914073,
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d67.0.3396.87)\n  (Driver info: chromedriver\u003d2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-DE9H8MO\u0027, ip: \u0027192.168.31.196\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_161\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\\Users\\Tassio\\AppData\\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}\nSession ID: f7c8ce87be9fb46bc50722bf99e4d699\n*** Element info: {Using\u003dxpath, value\u003d//li[@class\u003d\u0027list-inline_item\u0027]//*[@href\u003d\u0027http://atendimentocea.zendesk.com\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat pageobjetcs.Page.getElement(Page.java:20)\r\n\tat pageobjetcs.Resultado.getPerguntasFrequentes(Resultado.java:14)\r\n\tat pageobjetcs.Resultado.clickPerguntasFrequentes(Resultado.java:18)\r\n\tat funcionalidades.ResultadoFuncionalidade.acessarAjuda(ResultadoFuncionalidade.java:38)\r\n\tat steps.ResultadoStep.acessar_categoria_de_ajuda(ResultadoStep.java:15)\r\n\tat ✽.Quando acessar categoria de ajuda(Busca.feature:15)\r\n",
+              "status": "failed"
             },
             "line": 15,
             "name": "acessar categoria de ajuda",
@@ -59,8 +60,7 @@
           },
           {
             "result": {
-              "duration": 514303789,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 17,
             "name": "apresenta resultado das perguntas frequentes e realiza print",
@@ -77,154 +77,6 @@
           },
           {
             "line": 11,
-            "name": "@ExecutaCenarios"
-          }
-        ]
-      },
-      {
-        "line": 7,
-        "name": "Realizacao do acesso inicial como pre-requisito",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 1175462903,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "que estou na pagina inicial",
-            "match": {
-              "location": "PaginaInicialStep.que_estou_na_pagina_inicial()"
-            },
-            "keyword": "Dado "
-          }
-        ]
-      },
-      {
-        "line": 22,
-        "name": "Realizar pesquisa \"Institucional\" na seÃ§Ã£o \"Loja FÃ­sica\"",
-        "description": "",
-        "id": "buscar-elementos-de-perguntas-frequentes,-perguntas-exibidas-e-valores-da-tela;realizar-pesquisa-\"institucional\"-na-seã§ã£o-\"loja-fã­sica\"",
-        "type": "scenario",
-        "keyword": "Cenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 4896404555,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "acessar a opcao institucional na secao de loja fisica",
-            "match": {
-              "location": "ResultadoStep.acessar_a_categoria_institucional_na_secao_de_loja_fisica()"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 570323459,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "validar as perguntas exibidas na tela",
-            "match": {
-              "location": "ResultadoStep.validar_as_perguntas_exibidas_na_tela()"
-            },
-            "keyword": "Entao "
-          }
-        ],
-        "tags": [
-          {
-            "line": 20,
-            "name": "@ID02"
-          },
-          {
-            "line": 20,
-            "name": "@ExecutaCenarios"
-          }
-        ]
-      },
-      {
-        "line": 7,
-        "name": "Realizacao do acesso inicial como pre-requisito",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 1045126956,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "que estou na pagina inicial",
-            "match": {
-              "location": "PaginaInicialStep.que_estou_na_pagina_inicial()"
-            },
-            "keyword": "Dado "
-          }
-        ]
-      },
-      {
-        "line": 31,
-        "name": "Realizar pesquisa do Telefone do CartÃ£o C\u0026A",
-        "description": "",
-        "id": "buscar-elementos-de-perguntas-frequentes,-perguntas-exibidas-e-valores-da-tela;realizar-pesquisa-do-telefone-do-cartã£o-c\u0026a",
-        "type": "scenario",
-        "keyword": "Cenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 11692995819,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "acessar opcao \"Telefone do CartÃ£o C\u0026A\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Telefone do CartÃ£o C\u0026A",
-                  "offset": 15
-                }
-              ],
-              "location": "ResultadoStep.acessar_opcao(String)"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 400989374,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "salvar a imagem do cartao",
-            "match": {
-              "location": "ResultadoStep.salvar_a_imagem_do_cartÃ£o()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 16410,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "validar os telefones",
-            "match": {
-              "location": "ResultadoStep.validar_os_telefones()"
-            },
-            "keyword": "Entao "
-          }
-        ],
-        "tags": [
-          {
-            "line": 29,
-            "name": "@ID03"
-          },
-          {
-            "line": 29,
             "name": "@ExecutaCenarios"
           }
         ]

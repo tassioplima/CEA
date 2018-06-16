@@ -13,6 +13,7 @@ public class Page {
 	public Page(WebDriver driver){
 		super();
 		this.driver = driver;
+		
 	}
 	
 	public WebElement getElement(String xpath) {
